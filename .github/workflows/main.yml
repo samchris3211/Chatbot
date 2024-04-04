@@ -20,3 +20,9 @@ jobs:
 
     - name: Run Script
       run: python utils.py
+
+    - name: Use a Secret
+      run: |
+        echo "My secret is $MY_SECRET"
+      env:
+        MY_SECRET: ${{ secrets.OPENAI }}
