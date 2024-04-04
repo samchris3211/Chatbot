@@ -1,7 +1,9 @@
 import openai
 from openai import OpenAI
+import os
+from dotenv import load_dotenv
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key=MY_SECRET)
 
 
 def get_initial_message():
