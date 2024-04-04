@@ -25,6 +25,7 @@ model = st.selectbox(
     (
         "gpt-3.5-turbo",
         "gpt-4",
+        "ft:gpt-3.5-turbo-0125:personal::99yL0Uit",
     ),  # Here we will use our fine tuned model as a selection
 )
 
