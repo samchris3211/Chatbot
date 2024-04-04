@@ -4,7 +4,9 @@ import os
 from dotenv import load_dotenv
 import streamlit as st
 
-client = OpenAI(api_key=st.secrets["auth_token"])
+api_key = st.secrets["OPEN_AI_KEY"]
+
+client = OpenAI(api_key = api_key)
 
 
 def get_initial_message():
