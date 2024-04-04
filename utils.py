@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 import streamlit as st
 
-api_key = st.secrets["OPEN_AI_KEY"]
+api_key = st.write(st.secrets["OPEN_AI_KEY"])
 
 client = OpenAI(api_key = api_key)
 
