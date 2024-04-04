@@ -1,7 +1,7 @@
 import openai
 from openai import OpenAI
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="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")
 
 
 def get_initial_message():
