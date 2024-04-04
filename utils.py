@@ -3,9 +3,10 @@ from openai import OpenAI
 import os
 from dotenv import load_dotenv
 import streamlit as st
+load_dotenv()
 
-st.write("api_key", st.secrets["OPEN_AI_KEY"])
-client = OpenAI(api_key = api_key)
+secret_key = st.secrets["OPENAI_KEY"]
+client = OpenAI(api_key = secret_key)
 
 
 def get_initial_message():
